@@ -1,0 +1,61 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		const a = 5 //constante a recebe 5
+		const b = 20
+		let c = a * b //variável c recebe a vezes b
+		console.log(c) //coloca no console o valor de c
+
+		const idade = 22 //define constatne idade
+		
+
+		let str1 = "Ruhan tem " + idade + " anos"
+		let str2 = 'Ruhan tem ${idade} anos' //nao interpola
+		let str3 = `Ruhan tem ${idade} anos` //interpola valor de idade na string
+		console.log(str1)
+		console.log(str2)
+		console.log(str3)
+
+		let ruhan = { //JSON (objeto)
+			idade : 30,
+			nome: 'Ruhan',
+			cpf: '012.333.550-20'
+		}
+		console.log(ruhan.idade) //imprime no console a idade do objeto JSON
+
+		let abc = Array(10).fill(5) //cria array com 10 posições e coloca 5 em todas as posições
+		let abc2 = [1,2,3,4,5,6,7,8,9,0] //cria array
+
+		const filtro = (v) => (v % 2 != 0) //define um filtrp
+		abc_filtrado = abc2.filter(filtro) //aplica o filtro
+		
+		const mapa = (v,i) => (v*10 + i) //define um mapa
+		abc_map = abc2.map(mapa) //aplica o mapa e coloca em abc_,ap
+
+		console.log(mult(20))
+
+		
+		//DIFERENTES FORMAS DE DEFINIR UMA FUNÇÃO
+		function mult(t){
+			return 10*t;
+		}
+
+		const mult2 = (t) => {
+			return t * 10;
+		}
+
+		const mult3 = t => {
+			return t * 10;
+		}
+
+		const mult4 = t => t * 10				
+
+		
+
+	</script>
+</body>
+</html>

@@ -1,5 +1,5 @@
 import React from 'react'
-import {SafeAreaView, StyleSheet} from 'react-native'
+import {SafeAreaView, StyleSheet, Text} from 'react-native'
 import MeuComponente from './components/MeuComponente';
 /**
  * Sample React Native App
@@ -9,10 +9,19 @@ import MeuComponente from './components/MeuComponente';
  * @flow strict-local
  */
 //components
+
+//const vec = [1,2,3,4,5,6,7,8,9];
+
+
+
 const App = () => {
   return(
-    <SafeAreaView style={estilo.App}>
-      <MeuComponente/>           
+    <SafeAreaView style={estilo.App}>      
+      <Text style={{fontSize: 80}}>
+        Teste
+      </Text>      
+        {/*vec.map(() => (MeuComponente()))*/}
+      <MeuComponente/>
     </SafeAreaView>
   );
 }

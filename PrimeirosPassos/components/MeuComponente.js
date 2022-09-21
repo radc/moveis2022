@@ -17,7 +17,8 @@ const estilo = StyleSheet.create(
             fontSize : 32,
             fontWeight : "bold",
             textAlign: 'center',
-            color: '#044'
+            color: '#044',
+            
         },
         subtitulo : {
             fontSize: 28,

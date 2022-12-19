@@ -1,37 +1,11 @@
-import React from 'react'
-import {SafeAreaView, StyleSheet, Text} from 'react-native'
-import MeuComponente from './components/MeuComponente';
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow strict-local
- */
-//components
+import React from "react";
+import {Text, View, StyleSheet} from "react-native"
+import Nome from "./Nome"
 
-//const vec = [1,2,3,4,5,6,7,8,9];
+const names = ["Goku", "Ruhan", "Otávio", "Marina", "Aline"]
 
-
-
-const App = () => {
-  return(
-    <SafeAreaView style={estilo.App}>      
-      <Text style={{fontSize: 80}}>
-        Teste
-      </Text>      
-        {/*vec.map(() => (MeuComponente()))*/}
-      <MeuComponente/>
-    </SafeAreaView>
-  );
-}
-
-const estilo = StyleSheet.create({
-  App : {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center'
-  }
-})
-
-export default App;
+export default App = () => (
+  names.map(
+    n => <Nome apres={n}/>
+  )  
+)
